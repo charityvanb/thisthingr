@@ -1,10 +1,10 @@
 import React from 'react';
-import ReactNative from 'react-native';
+import { Text } from 'react-native';
 
-const Texty = () => {
+const Header = () => {
     return (
         <Text>Once I was a chicken</Text>
     );
 };
 
-export default Texty;
+export default Header;
