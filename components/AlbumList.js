@@ -3,10 +3,10 @@ import { View, Text } from 'react-native';
 
 export default class AlbumList extends React.Component {
     componentWillMount() {
-        console.log('component will mount in AlbumList')
             fetch('https://rallycoding.herokuapp.com/api/music_albums')
-            .then((response) => response.json())
-            .then(data => this.setState({ albums: data }));
+            .then(response => console.log(response))
+            // .then((response) => response.json())
+            // .then(data => this.setState({ albums: data }));
     }
 
     render() {
